@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="gmail.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="html" href="Hanbin-Choi-MISSION(1).html">
+    <title>Send Through An Email 👾</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: sans-serif;
+            overflow-y: hidden;
+        }
+        input {
+            font-style: italic;
+        }
+        h1 {
+            position: absolute;
+            font-style: italic;
+            left: 46.5%;
+            top: 2.5%;
+            border: double 0.4rem black;
+            padding: 5px;
+            box-shadow: 2px 2px 5px black;
+            cursor: pointer;
+        }
+        textarea {
+            height: 15rem;
+            resize: none;
+        }
+        .logo {
+            position:relative;
+            top: 1rem;
+            left: 1rem;
+            height: auto;
+            width: 100px;
+        }
+        header > nav {
+            display: flex;
+            margin-top: 20px;
+            gap: 65px;
+            font-size: 2.5rem;
+            justify-content: right;
+            padding: 0 5%;
+        }
+        a {
+            color: #511a8b;
+        }
+        nav:hover a {
+            transform: translateY(-10px);
+            color: #511a8b;
+        }
+        nav:hover > a:not(:hover) {
+            transform: translateY(0);
+            color: #511a8b;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+        }
+        .background {
+            background: linear-gradient(to bottom, #cbf0ff 1%, rgb(122, 230, 230));
+            height: 100dvh;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+        .container form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 75dvh;
+            width: auto;
+            flex: 40rem;
+            padding: 3rem 4rem;
+            box-shadow: 8px 8px 10px hsla(0, 0%, 0%, 0.959);
+            border: double 0.5rem;
+        }
+        .box {
+            padding: 1rem;
+            font-size: 1.5rem;
+            text-transform: none;
+            border: 2px solid black;
+            border-radius: .5rem;
+            margin: 1rem 0;
+        }
+        input {
+            display: flex;
+        }
+        .btn {
+            cursor: pointer;
+            padding: .2rem;
+            background-color: #fafeff;
+            height: 2rem;
+            width: auto;
+            border-radius: 10px;
+            border-style: solid;
+            font-weight: 600;
+            font-size: .9rem;
+            box-shadow: 3px 3px 6px black;
+        }
+        .btn:hover {
+            background-color: #f0e2e2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="https://www.missionreadyhq.com/" target="_blank"><img style="cursor: pointer;" class="logo" src="topleft.png" title="MissionReady"></a>
+         </div>
+        <nav>
+            <a class="home" href="Hanbin-Choi-MISSION(1).html"><i class="fa-solid fa-house-user" title="Home"></i></a>
+            <a href="https://github.com/xqcjimmy?tab=repositories" target="_blank"><i class="fa-solid fa-cloud-arrow-up" title="Projects"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope" title="Contact"></i></a>
+        </nav>
+    </header>
+    
+    <section class="background">
+        <h1>Contact Me</h1>
+        <div class="container">
+            <form action="">
+                <input type="text" placeholder="Your Name" class="box"> <br>
+                <input type="email" placeholder="Your Email" class="box"> <br>
+                <input type="number" placeholder="Contact Number" class="box">
+                <textarea placeholder="Message" cols="50" rows="10" class="box"></textarea>
+                <input type="submit" value="send message" class="btn">
+            </form>
+        </div>
+    </section>
+</body>
+</html>

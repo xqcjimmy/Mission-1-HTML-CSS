@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mission 1 Database</title>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!--https://fontawesome.com/search?p=2-->
+        <link rel="icon" type="image/jpg" href="squidwardfavicon.jpg">
+        <link rel="html" href="MISSION(1)-email.html">
+        <link rel="html" href="Hanbin-Choi-MISSION(1).html">
+        <style>
+
+        html {
+            overflow-y: hidden;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+   /* ADD MEDIA QUERY / WEB RESPONSIVE */
+
+        /* Logo */
+        .logo {
+            position:relative;
+            top: 1rem;
+            left: 1rem;
+            height: auto;
+            width: 100px;
+        }
+        header > nav {
+            display: flex;
+            margin-top: 20px;
+            gap: 65px;
+            font-size: 2rem;
+            justify-content: right;
+            padding: 0 5%;
+        }
+        nav:hover a {
+            transform: translateY(-10px);
+            color: #7827c4;
+        }
+        nav:hover > a:not(:hover) {
+            transform: translateY(0);
+            color: #511a8b;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+        }
+        @media screen and (max-width: 1200px) {
+            header {
+                justify-content: space-evenly;
+            }
+        }
+        @media screen and (max-width: 868px) {
+            h1 {
+                font-size: 1.2rem;
+            }
+        }
+        h1 {
+            margin-bottom: 2px;
+            cursor: pointer;
+            border: 2px solid black;
+            padding: 2px 4px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 6px black;
+        }
+        @keyframes missionreadycolors {
+            16.6% {
+                background: #395aa9;
+            }
+            32.2% {
+                background: #573c99;
+            }
+            60% {
+                background: #8b218f;
+            }
+            49.8% {
+                background-color: #3f3ace;
+            }
+            66.4% {
+                background-color: #65327d;
+            }
+            83% {
+                background-color: #aa1692;
+            }
+        }
+        h1:hover {
+            animation-name: missionreadycolors;
+            animation-timing-function: ease-in-out;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        i:hover {
+            transform: scale(1.2);
+        }
+        img:hover {
+            transform: scale(1.2);
+        }
+        .Learn > div {
+            cursor: pointer;
+            display: flex;
+            gap: 50px;
+            font-size: 140px;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 43vh;
+        }
+        hr {
+            border-top: 1px solid black;
+        }
+        .Create > div {
+            cursor: pointer;
+            display: flex;
+            align-items: normal;
+            gap: 50px;
+            width: 100%;
+            height: 62.4%;
+        }
+        </style>
+    </head>
+    <body>
+<!-- navbar & h1 with header -->
+    <header>
+        <h2><a href="https://www.missionreadyhq.com/" target="_blank"><img style="cursor: pointer;" class="logo" src="topleft.png" title="MissionReady"></a></h2><br>
+        <h1>Learn</h1> <br>
+        <h1 class="coloful">FullStack</h1> <br> <!--Animated-->
+        <h1>Create</h1>
+        <nav>
+            <a class="home" href="Hanbin-Choi-MISSION(1).html" target="_blank"><i class="fa-solid fa-house-user" title="Home"></i></a>
+            <a href="https://github.com/xqcjimmy?tab=repositories" target="_blank"><i class="fa-solid fa-cloud-arrow-up" title="Projects"></i></a>
+            <a href="MISSION(1)-email.html" target="_blank"><i class="fa-solid fa-envelope" title="Contact"></i></a>
+        </nav>
+    </header>
+    <br>
+    <div class="Learn">
+        <div class="flextop">
+            <i style="color: #F16529"; class="fa-brands fa-html5" title="HTML 5"></i>
+            <i style="color: #2965F1"; class="fa-brands fa-css3-alt" title="CSS"></i>
+            <i style="color: #d1be45"; class="fa-brands fa-js" title="JavaScript"></i>
+            <i style="color: #3C873A"; class="fa-brands fa-node" title="NodeJS"></i>
+            <i style="color: #61DBFB"; class="fa-brands fa-react" title="React"></i>
+            <i style="color: #F29111"; class="fa-solid fa-database" title="SQL"></i> 
+            <i style="color: black"; class="fa-brands fa-square-github" title="GitHub"></i>
+            <i style="color: #732afc"; class="fa-solid fa-code" title="Fullstack Coding"></i>
+    </div>
+    <hr>
+    <div class="Create">
+        <div>
+            <img src="akl_council-removebg-preview.png" title="AKL Council">
+            <img src="datacom-logo-1946113336-removebg-preview.png" title="DataCom">
+            <img src="Spark-New-Zealand-Logo-3494543710-removebg-preview.png" title="Spark NZ">
+            <img src="xero-logo-2439645507-removebg-preview.png" title="Xero">
+            <img src="rocket-lab-logo-marker-hg-2505333210-removebg-preview.png" title="Rocket Lab">
+            <img src="Cisco-Logo-PNG-Image-97217207-removebg-preview.png" title="Cisco">
+        </div>
+    </div>
+    </body>
+</html>
